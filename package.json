@@ -9,7 +9,8 @@
     "build:hash-history": "tsc -b && VITE_USE_HASH_HISTORY=true vite build",
     "preview": "vite preview",
     "format": "biome format --write src/",
-    "lint": "biome lint"
+    "lint": "biome lint",
+    "lint:fix": "biome lint --write --unsafe"
   },
   "dependencies": {
     "@tanstack/react-router": "^1.160.0",

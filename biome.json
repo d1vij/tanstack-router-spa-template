@@ -6,7 +6,8 @@
         "useIgnoreFile": true
     },
     "files": {
-        "ignoreUnknown": false
+        "ignoreUnknown": false,
+        "includes": ["src/*", "!**/*.gen.ts"]
     },
     "formatter": {
         "enabled": true,
@@ -16,10 +17,13 @@
     "linter": {
         "enabled": true,
         "rules": {
-            "recommended": true
+            "recommended": true,
+            "nursery": {
+                "useSortedClasses": "info"
+            }
         }
     },
-    "css":{
+    "css": {
         "parser": {
             "tailwindDirectives": true,
             "cssModules": true
