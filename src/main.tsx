@@ -23,3 +23,9 @@ createRoot(document.getElementById("root")!).render(
         <RouterProvider router={router} />
     </StrictMode>,
 );
+
+declare module "@tanstack/react-router" {
+    interface Register {
+        router: typeof router;
+    }
+}
